@@ -2,7 +2,7 @@
 const
     net = require('net'),
     client = net.connect({port: 5432});
-
+a
 client.on('data', function(data) {
     let message = JSON.parse(data);
     if (message.type === 'watching') {
